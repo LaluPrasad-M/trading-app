@@ -1,0 +1,21 @@
+.Bot {
+  display: flex;
+  margin:30px 10px ;
+}
+.botItem {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+}
+.botItem:nth-child(1) {
+    background-color: blue;
+}
+.botItem:nth-child(2) {
+    background-color: red;
+}
+.botItem:nth-child(3) {
+    background-color: green;
+}
+.botItem:nth-child(4) {
+  background-color: yellow;
+}

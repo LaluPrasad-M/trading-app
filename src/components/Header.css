@@ -1,0 +1,18 @@
+.main-header {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.icon,
+.exit {
+  color: #eee;
+  font-size: "1.5em";
+  display: flex;
+  justify-content: flex-start;
+}
+.main-heading {
+  align-self: center;
+  margin-top: 20px;
+  color: lightgray !important;
+}
