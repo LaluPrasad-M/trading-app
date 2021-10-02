@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Product.module.css";
+import "./Product.css";
 // Redux
 import { connect } from "react-redux";
 import {
@@ -11,26 +11,26 @@ from "../../../Redux/Bot/Bot-actions";
 
 const Product = ({ botsdetails, addToCart, loadCurrentItem }) => {
   return (
-    <div className={styles.botsdetails}>
-       <div className={styles.botsdetails__details}>
-        <p className={styles.details__title}>{botsdetails.title}</p>
+    <div className="botsdetails">
+       <div className="botsdetailsDetails">
+        <div className="details__title">{botsdetails.title}</div>
         
       </div>
-      <p className={styles.details__index}>Index Value<br></br>{botsdetails.index}</p>
-      <p className={styles.details__cagr}>CAGR<br></br>{botsdetails.cagr}%</p>
+      <div className="details__index">Index Value<br></br>{botsdetails.index}</div>
+      <div className="details__cagr">CAGR<br></br>{botsdetails.cagr}%</div>
 
-      <div className={styles.botsdetails__buttons}>
-        <Link to={`/botsdetails/${botsdetails.id}`}>
+      <div className="botsdetails__buttons">
+        <Link to={"/botsdetails/"+botsdetails.id}>
           <button
             onClick={() => loadCurrentItem(botsdetails)}
-            className={`${styles.buttons__btn} ${styles.buttons__view}`}
+            className="buttons__btn buttons__view"
           >
             View algo
           </button>
         </Link>
         <button
           onClick={() => addToCart(botsdetails.id)}
-          className={`${styles.buttons__btn} ${styles.buttons__add}`}
+          className="buttons__btn buttons__add"
         >
           Buy
         </button>

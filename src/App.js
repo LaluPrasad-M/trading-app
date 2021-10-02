@@ -1,17 +1,3 @@
-// import Header from "./components/Header";
-// import Body from "./components/Body";
-// import "./App.css";
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header />
-//       <Body />
-//     </div>
-//   );
-// }
-
-// export default App;
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -23,7 +9,7 @@ import "./App.css";
 
 import { connect } from "react-redux";
 
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import Products from "./components/Products/Products";
 import Cart from "./components/Cart/Cart";
 import Algo from "./components/Algo/Algo";
@@ -32,7 +18,7 @@ function App({ current }) {
   return (
     <Router>
       <div className="app">
-        <Navbar />
+        <Header />
         <Switch>
           <Route exact path="/" component={Products} />
           <Route exact path="/cart" component={Cart} />

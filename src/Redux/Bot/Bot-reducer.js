@@ -49,11 +49,6 @@ const BotReducer = (state = INITIAL_STATE, action) => {
             )
           : [...state.cart, { ...item, qty: 1 }],
       };
-    case actionTypes.REMOVE_FROM_CART:
-      return {
-        ...state,
-        cart: state.cart.filter((item) => item.id !== action.payload.id),
-      };
     case actionTypes.LOAD_CURRENT_ITEM:
       return {
         ...state,

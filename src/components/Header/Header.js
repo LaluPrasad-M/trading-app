@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./Header.css";
 
 import { connect } from "react-redux";
 
-const Navbar = ({ cart }) => {
+const Header = ({ cart }) => {
   const [cartCount, setCartCount] = useState(0);
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps)(Header);

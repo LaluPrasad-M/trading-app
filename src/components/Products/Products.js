@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "./Products.module.css";
+import "./Products.css";
 // Redux
 import { connect } from "react-redux";
 import Product from "./Product/Product";
 
 const Products = ({ products }) => {
     return (
-      <div className={styles.products}>
+      <div className="products">
         {products.map((botsdetails) => (
           <Product key={botsdetails.id} botsdetails={botsdetails} />
         ))}
