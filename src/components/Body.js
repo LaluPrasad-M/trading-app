@@ -1,6 +1,7 @@
 // import { MdExitToApp, MdLibraryMusic } from "react-icons/md";
 import React, { useState } from "react";
 import "./Header.css";
+import "./Body.css";
 import BotsData from "../resources/Data";
 
 import Bot from "./Body/Bot";
@@ -22,7 +23,7 @@ const Body = () => {
 
   return (
     <div className="main-body">
-      <h1>Select the Best Algo Suited for your needs</h1>
+      <h1 className = "heading">Select the Best Algo Suited for your needs</h1>
       <div>
         <Bot bots={bots} setBots={setBots} />
       </div>

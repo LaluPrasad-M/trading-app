@@ -7,18 +7,18 @@ const Bot = ({ bots, setBots }) => {
       {bots.map((bot) => (
         <div>
           <div className="Bot" key={bot.id}>
-            <div className="botItem">{bot.bot}</div>
+            <div className="botItem botType">{bot.bot}</div>
             <div className="botItem">
-              <div>Index Value</div>
-              <div>{bot["index-value"]}</div>
+              <div className = "IndexVal">Index Value</div>
+              <div className = "botValue">{bot["index-value"]}</div>
             </div>
             <div className="botItem">
-              <div>CAGR</div>
-              <div>{bot.cagr}%</div>
+              <div className= "IndexVal">CAGR</div>
+              <div className = "botCagr">{bot.cagr}%</div>
             </div>
-            <div className="botItem">
+            <div className="button">
               <button className="btn">View Algo</button>
-              <button className="btn">Buy</button>
+              <button className="btn1">Buy</button>
             </div>
           </div>
           <hr />
